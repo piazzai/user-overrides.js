@@ -1,10 +1,5 @@
 user_pref("_user.js.parrot", "OVERRIDES error: the parrot sleeps with the fishes!");
 
-user_pref("privacy.cpd.cookies", true);                                                 // delete cookies upon clearing history
-user_pref("privacy.cpd.offlineApps", true);                                             // delete offline website data upon clearing history
-user_pref("privacy.cpd.openWindows", false);                                            // delete open windows upon clearing history
-user_pref("privacy.cpd.passwords", false);                                              // delete saved passwords upon clearing history
-user_pref("privacy.cpd.siteSettings", false);                                           // delete site settings upon clearing history
 user_pref("browser.cache.memory.enable", false);                                        // disable memory cache
 user_pref("browser.chrome.site_icons", false);                                          // disable favicons in history and bookmarks
 user_pref("browser.contentblocking.report.lockwise.enabled", false);                    // disable reporting of visited sites to check for breaches
@@ -21,8 +16,8 @@ user_pref("browser.urlbar.suggest.history", false);                             
 user_pref("browser.urlbar.suggest.openpage", false);                                    // do not suggest currently open pages
 user_pref("browser.urlbar.suggest.topsites", false);                                    // do not suggest top sites
 user_pref("dom.block_download_insecure", true);                                         // block downloads from an insecure protocol (like http)
-user_pref("dom.push.connection.enabled", false);                                        // no push notifications connection
-user_pref("dom.push.enabled", false);                                                   // no push notifications
+user_pref("dom.push.connection.enabled", false);                                        // disable push notifications connection
+user_pref("dom.push.enabled", false);                                                   // disable push notifications
 user_pref("dom.push.userAgentID", "");                                                  // user-agent id for push services
 user_pref("dom.security.https_only_mode.upgrade_local", true);                          // upgrade to https protocol for local resources
 user_pref("dom.webnotifications.enabled", false);                                       // disable web notifications
@@ -42,6 +37,11 @@ user_pref("identity.fxaccounts.enabled", false);                                
 user_pref("media.autoplay.blocking_policy", 2);                                         // audio/video content is click-to-play
 user_pref("media.autoplay.default", 5);                                                 // block all media playbacks
 user_pref("permissions.memory_only", true)                                              // permissions are session-only
+user_pref("privacy.cpd.cookies", true);                                                 // delete cookies upon clearing history
+user_pref("privacy.cpd.offlineApps", true);                                             // delete offline website data upon clearing history
+user_pref("privacy.cpd.openWindows", false);                                            // delete open windows upon clearing history
+user_pref("privacy.cpd.passwords", false);                                              // delete saved passwords upon clearing history
+user_pref("privacy.cpd.siteSettings", false);                                           // delete site settings upon clearing history
 user_pref("privacy.userContext.newTabContainerOnLeftClick.enabled", true);              // open container choice on new tab clicks
 user_pref("signon.firefoxRelay.feature", "disabled");                                   // disable firefox relay
 user_pref("signon.generation.enabled", false);                                          // disable password generation
