@@ -1,3 +1,4 @@
+
 user_pref("_user.js.parrot", "OVERRIDES error: the parrot sleeps with the fishes!");
 
 user_pref("browser.safebrowsing.downloads.remote.enabled", true);                       // enable safe browsing checks for downloads
