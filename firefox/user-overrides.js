@@ -39,9 +39,9 @@ user_pref("media.autoplay.default", 5);                                         
 user_pref("permissions.memory_only", true)                                              // permissions are session-only
 user_pref("privacy.cpd.cookies", true);                                                 // delete cookies upon clearing history
 user_pref("privacy.cpd.offlineApps", true);                                             // delete offline website data upon clearing history
-user_pref("privacy.cpd.openWindows", false);                                            // delete open windows upon clearing history
-user_pref("privacy.cpd.passwords", false);                                              // delete saved passwords upon clearing history
-user_pref("privacy.cpd.siteSettings", false);                                           // delete site settings upon clearing history
+user_pref("privacy.cpd.openWindows", true);                                             // delete open windows upon clearing history
+user_pref("privacy.cpd.passwords", true);                                               // delete saved passwords upon clearing history
+user_pref("privacy.cpd.siteSettings", true);                                            // delete site settings upon clearing history
 user_pref("privacy.userContext.newTabContainerOnLeftClick.enabled", true);              // open container choice on new tab clicks
 user_pref("signon.firefoxRelay.feature", "disabled");                                   // disable firefox relay
 user_pref("signon.generation.enabled", false);                                          // disable password generation
