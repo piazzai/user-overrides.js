@@ -51,3 +51,5 @@ user_pref("startup.homepage_override_url", "");                                 
 user_pref("startup.homepage_welcome_url", "");                                          // url of Welcome page
 user_pref("startup.homepage_welcome_url.additional", "");                               // url of additional Welcome page
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);                 // allow styling with userChrome.css
+
+user_pref("_user.js.parrot", "OVERRIDES success: the parrot's alive and well.");
