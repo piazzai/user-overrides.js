@@ -38,7 +38,6 @@ user_pref("privacy.cpd.offlineApps", true);                                     
 user_pref("privacy.cpd.openWindows", true);                                             // delete open windows upon clearing history
 user_pref("privacy.cpd.passwords", true);                                               // delete saved passwords upon clearing history
 user_pref("privacy.cpd.siteSettings", true);                                            // delete site settings upon clearing history
-user_pref("privacy.userContext.newTabContainerOnLeftClick.enabled", true);              // open container choice on new tab clicks
 user_pref("signon.firefoxRelay.feature", "disabled");                                   // disable firefox relay
 user_pref("signon.generation.enabled", false);                                          // disable password generation
 user_pref("signon.management.page.breach-alerts.enabled", false);                       // disable alert for logins into breached websites
