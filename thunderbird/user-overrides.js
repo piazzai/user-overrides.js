@@ -3,6 +3,7 @@ user_pref("_user.js.parrot", "OVERRIDES error: the parrot sleeps with the fishes
 
 user_pref("browser.safebrowsing.downloads.remote.enabled", true);                       // enable safe browsing checks for downloads
 user_pref("calendar.timezone.local", "Europe/Madrid");                                  // provide timezone to prevent automatic extraction
+user_pref("calendar.week.start", 1);                                                    // start the week on monday
 user_pref("clipboard.plainTextOnly", true);                                             // do not retain formatting when copy/pasting text
 user_pref("dom.push.connection.enabled", false);                                        // disable push notifications connection
 user_pref("dom.push.enabled", false);                                                   // disable push notifications
