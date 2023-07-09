@@ -1,6 +1,8 @@
 
+/* error message */
 user_pref("_user.js.parrot", "OVERRIDES error: the parrot sleeps with the fishes!");
 
+/* overrides */
 user_pref("browser.safebrowsing.downloads.remote.enabled", true);                       // enable safe browsing checks for downloads
 user_pref("calendar.timezone.local", "Europe/Madrid");                                  // provide timezone to prevent automatic extraction
 user_pref("calendar.week.start", 1);                                                    // start the week on monday
@@ -22,8 +24,11 @@ user_pref("offline.autoDetect", false);                                         
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);                 // allow styling with userChrome.css
 user_pref("view_source.syntax_highlight", true);                                        // highlight source code of documents
 
+/* oauth2 settings */
 user_pref("network.cookie.cookieBehavior", 1);                                          // accept same-origin cookies
 user_pref("network.http.referer.XOriginPolicy", 0);                                     // always send cross-origin referrer 
 user_pref("network.http.sendRefererHeader", 2);                                         // send referrer header and set document referrer   
 user_pref("javascript.enabled", true);                                                  // enable javascript
+
+/* success message */
 user_pref("_user.js.parrot", "OVERRIDES success: the parrot's alive and well.");

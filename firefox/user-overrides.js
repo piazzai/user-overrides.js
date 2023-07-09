@@ -1,5 +1,7 @@
+/* error message */
 user_pref("_user.js.parrot", "OVERRIDES error: the parrot sleeps with the fishes!");
 
+/* overrides */
 user_pref("browser.cache.memory.enable", false);                                        // disable memory cache
 user_pref("browser.chrome.site_icons", false);                                          // disable favicons in history and bookmarks
 user_pref("browser.contentblocking.report.lockwise.enabled", false);                    // disable reporting of visited sites to check for breaches
@@ -45,4 +47,5 @@ user_pref("signon.rememberSignons", false);                                     
 user_pref("startup.homepage_welcome_url", "");                                          // url of Welcome page
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);                 // allow styling with userChrome.css
 
+/* success message */
 user_pref("_user.js.parrot", "OVERRIDES success: the parrot's alive and well.");
