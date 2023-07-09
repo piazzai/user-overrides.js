@@ -14,4 +14,4 @@ Following arkenfox recommendations, you will need to install [uBlock Origin](htt
 
 First, create a new Thunderbird profile. Download the [HorlogeSkynet user.js](https://github.com/HorlogeSkynet/thunderbird-user.js) and place `user.js` in your new profile folder. Then, move the Thunderbird `user-overrides.js` and `updater.sh` to your new profile folder, run the updater, and run the preference cleaner. Please note that the preference cleaner will be downloaded automatically when running the updater.
 
-The Thunderbird override file includes a separate section with four privacy-breaking overrides that are necessary to authenticate into email accounts that use Oauth2, such as Gmail. If you do not need to authenticate into such an account, it is best to delete these settings.
+The Thunderbird override file includes a separate section with four privacy-breaking preferences that are not generally necessary, but they are required to authenticate into email accounts that rely on Oauth2, such as Gmail. If you do not need to authenticate into such an account, it is best to delete these preferences.
