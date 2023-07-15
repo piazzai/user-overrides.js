@@ -14,4 +14,4 @@ Following arkenfox recommendations, after configuring your profile you will need
 
 Create a new Thunderbird profile. Download [thunderbird-user.js](https://github.com/HorlogeSkynet/thunderbird-user.js) and place the `user.js` file it contains in your new profile folder. Then, move `thunderbird/user-overrides.js` and `thunderbird/updater.sh` to the same folder and run the updater, which will also download the preference cleaner. Finally, run the preference cleaner. Make sure your Thunderbird profile is not in use while running these scripts.
 
-Please note that `thunderbird/user-overrides.js` includes a section with four privacy-breaking preferences that are necessary to authenticate into email accounts using Oauth2. If you do not need to authenticate into your account in this way, it is best to delete these preferences.
+Please note that `thunderbird/user-overrides.js` includes a section with four privacy-breaking preferences that are necessary to authenticate into email accounts using oauth. If you do not need to authenticate into your account in this way, it is best to delete these preferences.
