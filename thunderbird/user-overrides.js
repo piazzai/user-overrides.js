@@ -24,7 +24,7 @@ user_pref("offline.autoDetect", false);                                         
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);                 // allow styling with userChrome.css
 user_pref("view_source.syntax_highlight", true);                                        // highlight source code of documents
 
-/* oauth2 settings */
+/* oauth settings */
 user_pref("network.cookie.cookieBehavior", 1);                                          // accept same-origin cookies
 user_pref("network.http.referer.XOriginPolicy", 0);                                     // always send cross-origin referrer 
 user_pref("network.http.sendRefererHeader", 2);                                         // send referrer header and set document referrer   
