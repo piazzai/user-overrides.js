@@ -1,17 +1,29 @@
 # user-overrides.js
 
-This is a set of custom configuration files for Firefox and Thunderbird that are intended to increase privacy and security when using the two programs. While these files introduce settings that match my personal preferences, they could be helpful to other people seeking to harden their Firefox/Thunderbird clients.
+These are custom configuration files for Firefox and Thunderbird that are intended to increase privacy and security. While the files introduce settings that match my personal preferences, they could be helpful to others who want to harden their Firefox/Thunderbird clients.
 
-Please note that these override files contain preferences that can considerably change the default behavior of Firefox/Thunderbird. You should not use them without fully understanding how they are affecting your software. Delete every preference you do not want or do not understand.
+Please note that these files alter the default behavior of Firefox and Thunderbird. Do not use them without fully understanding how they are affecting your software.
 
 ### Firefox
 
-Create a new Firefox profile. Download the arkenfox [user.js](https://github.com/arkenfox/user.js) and place in your new profile folder the files `user.js`, `updater.sh`, and `prefsCleaner.sh`, which you can find in the arkenfox package. Then, move `firefox/user-override.js` to the same folder, run the updater, and run the preference cleaner. Make sure your Firefox profile is not in use while running these scripts.
+1. Create a new Firefox profile.
+2. Download the [arkenfox user.js](https://github.com/arkenfox/user.js) and move `user.js`, `updater.sh`, and `prefsCleaner.sh` to your profile folder.
+3. Move `firefox/user-override.js` to your profile folder.
+4. Run `updater.sh`, answer `y` to the prompt.
+5. Run `prefsCleaner.sh`, answer `1` to the prompt.
 
-Following arkenfox recommendations, after configuring your profile you will need to install [uBlock Origin](https://addons.mozilla.org/firefox/addon/ublock-origin/) and [Skip Redirect](https://addons.mozilla.org/firefox/addon/skip-redirect/) for additional protection. You should also add some lists to the uBlock default lists, including [AdGuard URL Tracking Protection](https://github.com/AdguardTeam/AdGuardFilters) and [Legitimate URL Shortener](https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt). Please read the [arkenfox wiki](https://github.com/arkenfox/user.js/wiki) very thoroughly or you could end up with a compromised browser.
+Make sure your Firefox profile is not in use during steps 4 and 5.
+
+As per arkenfox recommendations, after configuring your profile you will need to install [uBlock Origin](https://addons.mozilla.org/firefox/addon/ublock-origin/) (and possibly [Skip Redirect](https://addons.mozilla.org/firefox/addon/skip-redirect/)). You should add some lists to the uBlock default, including [AdGuard URL Tracking Protection](https://github.com/AdguardTeam/AdGuardFilters) and [Legitimate URL Shortener](https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt). Please read the [arkenfox wiki](https://github.com/arkenfox/user.js/wiki) very thoroughly or you could end up with a compromised browser.
 
 ### Thunderbird
 
-Create a new Thunderbird profile. Download [thunderbird-user.js](https://github.com/HorlogeSkynet/thunderbird-user.js) and place the `user.js` file it contains in your new profile folder. Then, move `thunderbird/user-overrides.js` and `thunderbird/updater.sh` to the same folder and run the updater, which will also download the preference cleaner. Finally, run the preference cleaner. Make sure your Thunderbird profile is not in use while running these scripts.
+1. Create a new Thunderbird profile.
+2. Download the [HorlogeSkynet user.js](https://github.com/HorlogeSkynet/thunderbird-user.js) and move `user.js` to your new profile folder.
+3. Move `thunderbird/user-overrides.js` and `thunderbird/updater.sh` to your profile folder.
+4. Run `updater.sh`, answer `y` to the prompt. This will download `prefsCleaner.sh`.
+5. Run `prefsCleaner.sh`, answer `1` to the prompt.
 
-Please note that `thunderbird/user-overrides.js` includes a section with four privacy-breaking preferences that are necessary to authenticate into email accounts using oauth. If you do not need to authenticate into your account in this way, it is best to delete these preferences.
+Make sure your Thunderbird profile is not in use during steps 4 and 5.
+
+Please note that `thunderbird/user-overrides.js` includes a section with four privacy-breaking preferences that are unfortunately necessary to authenticate into email accounts using Oauth2. They can and should be deleted after authenticating. If you do not need to authenticate into an account with Oauth2, you can delete them right away.
