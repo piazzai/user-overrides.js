@@ -4,7 +4,7 @@ These are custom configuration files for Firefox and Thunderbird that are intend
 
 Please note that these files alter the default behavior of Firefox and Thunderbird. Do not use them without fully understanding how they are affecting your software.
 
-### Firefox
+## Firefox
 
 1. Download the [arkenfox user.js](https://github.com/arkenfox/user.js).
 2. Create a new Firefox profile.
@@ -17,7 +17,7 @@ Make sure your Firefox profile is not in use during steps 5 and 6.
 
 As per arkenfox recommendations, after configuring your profile you will need to install [uBlock Origin](https://addons.mozilla.org/firefox/addon/ublock-origin/) and [Skip Redirect](https://addons.mozilla.org/firefox/addon/skip-redirect/). You should also add some lists to the uBlock default, including [AdGuard URL Tracking Protection](https://github.com/AdguardTeam/AdGuardFilters) and [Legitimate URL Shortener](https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt). Please read the [arkenfox wiki](https://github.com/arkenfox/user.js/wiki) very thoroughly or you could end up with a compromised browser.
 
-### Thunderbird
+## Thunderbird
 
 1. Download HorlogeSkynet's [thunderbird-user.js](https://github.com/HorlogeSkynet/thunderbird-user.js).
 2. Create a new Thunderbird profile.
