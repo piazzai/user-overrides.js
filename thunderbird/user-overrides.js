@@ -25,10 +25,12 @@ user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);         
 user_pref("view_source.syntax_highlight", true);                                        // highlight source code of documents
 
 /* oauth settings */
-user_pref("network.cookie.cookieBehavior", 1);                                          // accept same-origin cookies
-user_pref("network.http.referer.XOriginPolicy", 0);                                     // always send cross-origin referrer 
-user_pref("network.http.sendRefererHeader", 2);                                         // send referrer header and set document referrer   
-user_pref("javascript.enabled", true);                                                  // enable javascript
+user_pref("network.cookie.cookieBehavior", 1);                                          // accept same-origin cookies (default: 2)
+user_pref("network.http.referer.XOriginPolicy", 0);                                     // always send cross-origin referrer (default: 2)
+user_pref("network.http.sendRefererHeader", 2);                                         // send referrer header and set document referrer (default: 0)
+user_pref("javascript.enabled", true);                                                  // enable javascript (default: false)
+user_pref("permissions.default.image", 3);                                              // allow visual captcha (default: 2)
+user_pref("dom.webaudio.enabled", true);                                                // allow audio captcha (default: false)
 
 /* success message */
 user_pref("_user.js.parrot", "OVERRIDES success: the parrot's alive and well.");
