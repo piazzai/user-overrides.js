@@ -33,6 +33,7 @@ user_pref("extensions.update.autoUpdateDefault", false);                        
 user_pref("extensions.webextensions.restrictedDomains", "");                            // list of domains where extensions are not allowed
 user_pref("findbar.highlightAll", true);                                                // highlight all instances of search terms
 user_pref("identity.fxaccounts.enabled", false);                                        // disable firefox syncing
+user_pref("keyword.enabled", true);                                                     // enable urlbar searching
 user_pref("media.autoplay.blocking_policy", 2);                                         // audio/video content is click-to-play
 user_pref("media.autoplay.default", 5);                                                 // block all media playbacks
 user_pref("privacy.cpd.cookies", true);                                                 // delete cookies upon clearing history
@@ -44,7 +45,7 @@ user_pref("signon.firefoxRelay.feature", "disabled");                           
 user_pref("signon.generation.enabled", false);                                          // disable password generation
 user_pref("signon.management.page.breach-alerts.enabled", false);                       // disable alert for logins into breached websites
 user_pref("signon.rememberSignons", false);                                             // disable saving of login credentials
-user_pref("startup.homepage_welcome_url", "");                                          // url of Welcome page
+user_pref("startup.homepage_welcome_url", "");                                          // url of welcome page
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);                 // allow styling with userChrome.css
 
 /* success message */
