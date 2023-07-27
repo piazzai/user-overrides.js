@@ -6,7 +6,7 @@ Please note that these files alter the default behavior of Firefox and Thunderbi
 
 ## Firefox
 
-1. Download the [arkenfox user.js](https://github.com/arkenfox/user.js).
+1. Download the latest [arkenfox user.js](https://github.com/arkenfox/user.js).
 2. Create a new Firefox profile.
 3. Copy arkenfox's `user.js`, `updater.sh`, and `prefsCleaner.sh` to your profile folder.
 4. Copy `firefox/user-override.js` to your new profile folder.
@@ -19,12 +19,12 @@ As per arkenfox recommendations, after configuring your profile you will need to
 
 ## Thunderbird
 
-1. Download HorlogeSkynet's [thunderbird-user.js](https://github.com/HorlogeSkynet/thunderbird-user.js).
+1. Download the latest [Horloge-Skynet user.js](https://github.com/HorlogeSkynet/thunderbird-user.js).
 2. Create a new Thunderbird profile.
-3. Copy HorlogeSkynet's `user.js` to your new profile folder.
-3. Copy `thunderbird/user-overrides.js` and `thunderbird/updater.sh` to your profile folder.
-4. Run `updater.sh` and answer `y` to the prompt. This will download `prefsCleaner.sh`.
-5. Run `prefsCleaner.sh` and answer `1` to the prompt.
+3. Copy HorlogeSkynet's `user.js` to your profile folder.
+4. Copy `thunderbird/user-overrides.js` and `thunderbird/updater.sh` to your profile folder.
+5. Run `updater.sh` and answer `y` to the prompt. This will download `prefsCleaner.sh`.
+6. Run `prefsCleaner.sh` and answer `1` to the prompt.
 
 Make sure your Thunderbird profile is not in use during steps 5 and 6.
 
