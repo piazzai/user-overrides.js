@@ -28,4 +28,4 @@ As per arkenfox recommendations, after configuring your profile you will need to
 
 Make sure your Thunderbird profile is not in use during steps 5 and 6.
 
-Be aware that `thunderbird/user-overrides.js` includes a section with four privacy-breaking preferences that are necessary to authenticate into email accounts using Oauth2. If you do not need to use Oauth2, you can delete them. If you do need to use Oauth2, you can authenticate and then delete them, but remember to run steps 5 and 6 again afterward.
+Be aware that `thunderbird/user-overrides.js` includes a section with four privacy-breaking preferences that are necessary to authenticate into email accounts using Oauth2. If you do not need Oauth2, you can delete them. If you do need Oauth2, you can authenticate and then delete them. Run steps 5 and 6 again afterward.
