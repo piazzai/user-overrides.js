@@ -10,6 +10,8 @@ user_pref("browser.download.open_pdf_attachments_inline", true);                
 user_pref("browser.safebrowsing.downloads.remote.enabled", true);                       // enable safe browsing checks for downloads
 user_pref("browser.tabs.closeWindowWithLastTab", false);                                // do not close window after closing last tab
 user_pref("browser.tabs.firefox-view", false);                                          // disable tab syncing across devices
+user_pref("browser.translations.automaticallyPopup", false)                             // disable translations popup
+user_pref("browser.translations.enable", false);                                        // disable automatic translations
 user_pref("browser.urlbar.autoFill", false);                                            // do not autocomplete text in the address bar
 user_pref("browser.urlbar.suggest.bookmark", false);                                    // do not suggest bookmarks
 user_pref("browser.urlbar.suggest.engines", false);                                     // do not suggest search engines
