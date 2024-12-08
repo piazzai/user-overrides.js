@@ -1,4 +1,4 @@
-user_pref("_user.js.parrot", "arkenfox diffs");
+user_pref("_user.js.parrot", "I don't have to do this, you know?");
 
 /*** [SECTION 0800]: LOCATION BAR / SEARCH BAR / SUGGESTIONS / HISTORY / FORMS ***/
 /* 0815: disable tab-to-search [FF85+]
@@ -142,7 +142,7 @@ user_pref("browser.pagethumbnails.capturing_disabled", true); // [HIDDEN PREF]
 /* 5020: disable Windows native notifications and use app notications instead [FF111+] [WINDOWS] ***/
 user_pref("alerts.useSystemBackend.windows.notificationserver.enabled", false);
 
-user_pref("_user.js.parrot", "custom preferences");
+user_pref("_user.js.parrot", "I'm a qualified brain surgeon!");
 
 user_pref("extensions.pocket.enabled", false);
 user_pref("identity.fxaccounts.enabled", false);
@@ -153,4 +153,4 @@ user_pref("browser.translations.enable", false);
 user_pref("signon.firefoxRelay.feature", "disabled");
 user_pref("signon.generation.enabled", false);
 
-user_pref("_user.js.parrot", "overrides successfully loaded");
+user_pref("_user.js.parrot", "I only do this 'cause I like bein' me own boss");

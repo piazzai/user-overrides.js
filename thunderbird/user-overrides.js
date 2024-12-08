@@ -1,4 +1,4 @@
-user_pref("_user.js.parrot", "HorlogeSkynet diffs");
+user_pref("_user.js.parrot", "I don't have to do this, you know?");
 
 /*** [SECTION 0100]: STARTUP ***/
 /* 0102: set START page [SETUP-CHROME]
@@ -130,4 +130,4 @@ user_pref("mail.chat.show_desktop_notifications", false);
 /* 9313: Disable calendar service performing event "extraction" from email content ***/
 user_pref("calendar.extract.service.enabled", false);  // [DEFAULT: false]
 
-user_pref("_user.js.parrot", "overrides successfully loaded");
+user_pref("_user.js.parrot", "I only do this 'cause I like bein' me own boss");
