@@ -99,7 +99,7 @@ user_pref("security.nocertdb", true);
  * [NOTE] favicons.sqlite is sanitized on Firefox close ***/
 user_pref("browser.chrome.site_icons", false);
 /* 5007: exclude "Undo Closed Tabs" in Session Restore ***/
-user_pref("browser.sessionstore.max_tabs_undo", 0);
+// user_pref("browser.sessionstore.max_tabs_undo", 0);
 /* 5008: disable resuming session from crash
  * [TEST] about:crashparent ***/
 user_pref("browser.sessionstore.resume_from_crash", false);
@@ -122,7 +122,7 @@ user_pref("browser.urlbar.autoFill", false);
 /* 5013: disable browsing and download history
  * [NOTE] We also clear history and downloads on exit (2811)
  * [SETTING] Privacy & Security>History>Custom Settings>Remember browsing and download history ***/
-user_pref("places.history.enabled", false);
+// user_pref("places.history.enabled", false);
 /* 5014: disable Windows jumplist [WINDOWS] ***/
 user_pref("browser.taskbar.lists.enabled", false);
 user_pref("browser.taskbar.lists.frequent.enabled", false);
