@@ -13,7 +13,7 @@ user_pref("mailnews.start_page.enabled", false);
  * [NOTE] This pref only controls OCSP fetching and does not affect OCSP stapling
  * [SETTING] Privacy & Security > Security > Certificates > Query OCSP responder servers to confirm
  * [1] https://en.wikipedia.org/wiki/Ocsp ***/
-// user_pref("security.OCSP.enabled", 0); // [DEFAULT: 1]
+user_pref("security.OCSP.enabled", 1); // [DEFAULT: 1]
 
 /*** [SECTION 0600]: BLOCK IMPLICIT OUTBOUND [not explicitly asked for - e.g. clicked on] ***/
 /* 0610: enforce no "Hyperlink Auditing" (click tracking)
@@ -79,7 +79,7 @@ user_pref("alerts.useSystemBackend.windows.notificationserver.enabled", false);
 /* 7016: customize ETP settings
  * [NOTE] FPP (fingerprintingProtection) is ignored when RFP (4501) is enabled
  * [WHY] Arkenfox only supports strict (2701) which sets these at runtime ***/
-// user_pref("network.cookie.cookieBehavior", 1); // [DEFAULT: 5]
+user_pref("network.cookie.cookieBehavior", 5); // [DEFAULT: 5]
 
 /*** [SECTION 9000]: NON-PROJECT RELATED ***/
 /* 9090: disable return receipt sending unconditionally ***/
@@ -116,7 +116,7 @@ user_pref("mail.inline_attachments.text", false);
  * [1] https://developer.mozilla.org/en-US/docs/Mozilla/Thunderbird/Releases/3
  * [2] https://stackoverflow.com/questions/3054315/is-javascript-supported-in-an-email-message
  * ***/
-// user_pref("javascript.enabled", true);
+user_pref("javascript.enabled", false);
 
 /*** [SECTION 9300]: OTHER THUNDERBIRD COMPONENTS (CHAT / CALENDAR / RSS) ***/
 /* 9306: When chat is enabled, do not connect to accounts automatically
