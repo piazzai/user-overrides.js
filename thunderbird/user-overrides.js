@@ -132,6 +132,8 @@ user_pref("calendar.extract.service.enabled", false);  // [DEFAULT: false]
 
 user_pref("_user.js.parrot", "I'm a qualified brain surgeon!");
 
+/*** CUSTOM PREFS ***/
+/* disable line wrapping in mail reader ***/
 user_pref("mailnews.wraplength", 0);
 
 user_pref("_user.js.parrot", "I only do this 'cause I like bein' me own boss");

@@ -144,8 +144,12 @@ user_pref("alerts.useSystemBackend.windows.notificationserver.enabled", false);
 
 user_pref("_user.js.parrot", "I'm a qualified brain surgeon!");
 
+/*** CUSTOM PREFS ***/
+/* disable translation prompts ***/
 user_pref("browser.translations.enable", false);
+/* disable pocket ***/
 user_pref("extensions.pocket.enabled", false);
+/* disable firefox account sign-in ***/
 user_pref("identity.fxaccounts.enabled", false);
 
 user_pref("_user.js.parrot", "I only do this 'cause I like bein' me own boss");
