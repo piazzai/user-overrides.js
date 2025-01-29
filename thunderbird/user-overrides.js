@@ -65,8 +65,6 @@ user_pref("privacy.resistFingerprinting.pbmode", true); // [FF114+]
  * [SETUP-WEB] when enabled, sets 'en-US, en' for displaying pages and 'en-US' as locale.
  * [SETTING] General>Language>Choose your preferred language for displaying pages>Choose>Request English... ***/
 user_pref("privacy.spoof_english", 2);
-/* 4520: disable WebGL (Web Graphics Library) ***/
-user_pref("webgl.disabled", true);
 
 /*** [SECTION 5000]: OPTIONAL OPSEC ***/
 /* 5008: disable resuming session from crash
@@ -103,12 +101,6 @@ user_pref("mail.SpellCheckBeforeSend", false);
  * [2] https://support.mozilla.org/en-US/questions/1004181
  * [3] https://markdown-here.com ***/
 user_pref("mail.html_compose", false);
-/* 9216: Prefer to view as plaintext or HTML [SETUP-FEATURE]
- * true=Display a message as plain text when there is both a HTML and a plain
- * text version of a message body
- * false=Display a message as HTML when there is both a HTML and a plain text
- * version of a message body. (default) ***/
-user_pref("mailnews.display.prefer_plaintext", true);
 /* 9217: Inline attachments [SETUP-FEATURE]
  * true=Show inlinable attachments (text, images, messages) after the message.
  * false=Do not display any attachments with the message ***/
