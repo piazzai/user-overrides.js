@@ -119,6 +119,12 @@ user_pref("mail.inline_attachments.text", false);
  * [2] https://stackoverflow.com/questions/3054315/is-javascript-supported-in-an-email-message
  * ***/
 user_pref("javascript.enabled", false); // [DEFAULT: false]
+/* 9233: Default image permissions
+ * 1=Allow all images to load, regardless of origin. (Default),
+ * 2=Block all images from loading.
+ * 3=Prevent third-party images from loading
+ * [1] http://kb.mozillazine.org/Permissions.default.image ***/
+ user_pref("permissions.default.image", 2); // [DEFAULT: 2]
 
 /*** [SECTION 9300]: OTHER THUNDERBIRD COMPONENTS (CHAT / CALENDAR / RSS) ***/
 /* 9306: When chat is enabled, do not connect to accounts automatically
