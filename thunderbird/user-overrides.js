@@ -118,7 +118,7 @@ user_pref("mail.inline_attachments.text", false);
  * [1] https://developer.mozilla.org/en-US/docs/Mozilla/Thunderbird/Releases/3
  * [2] https://stackoverflow.com/questions/3054315/is-javascript-supported-in-an-email-message
  * ***/
-user_pref("javascript.enabled", false);
+user_pref("javascript.enabled", false); // [DEFAULT: false]
 
 /*** [SECTION 9300]: OTHER THUNDERBIRD COMPONENTS (CHAT / CALENDAR / RSS) ***/
 /* 9306: When chat is enabled, do not connect to accounts automatically
