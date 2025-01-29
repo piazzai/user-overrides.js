@@ -90,6 +90,8 @@ user_pref("mail.mdn.report.enabled", false);
 user_pref("pref.privacy.disable_button.view_cookies", true);
 user_pref("pref.privacy.disable_button.cookie_exceptions", true);
 user_pref("pref.privacy.disable_button.view_passwords", true);
+
+/*** [SECTION 9200]: EMAIL COMPOSITION (ENCODING / FORMAT / VIEW) ***/
 /* 9210: Check spelling before sending
  * [1] https://bugzilla.mozilla.org/show_bug.cgi?id=667133 ***/
 user_pref("mail.SpellCheckBeforeSend", false);
