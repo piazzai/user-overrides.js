@@ -5,16 +5,6 @@ user_pref("_user.js.parrot", "I don't have to do this, you know?");
  * [SETTING] General > Thunderbird Start Page ***/
 user_pref("mailnews.start_page.enabled", false);
 
-/*** [SECTION 1200]: HTTPS (SSL/TLS / OCSP / CERTS / HPKP) ***/
-/* 1211: enforce OCSP fetching to confirm current validity of certificates
- * 0=disabled, 1=enabled (default), 2=enabled for EV certificates only
- * OCSP (non-stapled) leaks information about the sites you visit to the CA (cert authority)
- * It's a trade-off between security (checking) and privacy (leaking info to the CA)
- * [NOTE] This pref only controls OCSP fetching and does not affect OCSP stapling
- * [SETTING] Privacy & Security > Security > Certificates > Query OCSP responder servers to confirm
- * [1] https://en.wikipedia.org/wiki/Ocsp ***/
-user_pref("security.OCSP.enabled", 1); // [DEFAULT: 1]
-
 /*** [SECTION 0600]: BLOCK IMPLICIT OUTBOUND [not explicitly asked for - e.g. clicked on] ***/
 /* 0610: enforce no "Hyperlink Auditing" (click tracking)
  * [1] https://www.bleepingcomputer.com/news/software/major-browsers-to-prevent-disabling-of-click-tracking-privacy-risk/ ***/
@@ -73,12 +63,6 @@ user_pref("browser.sessionstore.resume_from_crash", false);
 /* 5020: disable Windows native notifications and use app notications instead [FF111+] [WINDOWS] ***/
 user_pref("alerts.useSystemBackend.windows.notificationserver.enabled", false);
 
-/*** [SECTION 7000]: DON'T BOTHER ***/
-/* 7016: customize ETP settings
- * [NOTE] FPP (fingerprintingProtection) is ignored when RFP (4501) is enabled
- * [WHY] Arkenfox only supports strict (2701) which sets these at runtime ***/
-user_pref("network.cookie.cookieBehavior", 5); // [DEFAULT: 5]
-
 /*** [SECTION 9000]: NON-PROJECT RELATED ***/
 /* 9090: disable return receipt sending unconditionally ***/
 user_pref("mail.mdn.report.enabled", false);
@@ -105,18 +89,6 @@ user_pref("mail.html_compose", false);
  * true=Show inlinable attachments (text, images, messages) after the message.
  * false=Do not display any attachments with the message ***/
 user_pref("mail.inline_attachments.text", false);
-/* 9230: Disable JavaScript
- * [NOTE] JavaScript is already disabled in message content.
- * [1] https://developer.mozilla.org/en-US/docs/Mozilla/Thunderbird/Releases/3
- * [2] https://stackoverflow.com/questions/3054315/is-javascript-supported-in-an-email-message
- * ***/
-user_pref("javascript.enabled", false); // [DEFAULT: false]
-/* 9233: Default image permissions
- * 1=Allow all images to load, regardless of origin. (Default),
- * 2=Block all images from loading.
- * 3=Prevent third-party images from loading
- * [1] http://kb.mozillazine.org/Permissions.default.image ***/
- user_pref("permissions.default.image", 2); // [DEFAULT: 2]
 
 /*** [SECTION 9300]: OTHER THUNDERBIRD COMPONENTS (CHAT / CALENDAR / RSS) ***/
 /* 9306: When chat is enabled, do not connect to accounts automatically
@@ -135,5 +107,12 @@ user_pref("_user.js.parrot", "I'm a qualified brain surgeon!");
 /*** CUSTOM PREFS ***/
 /* disable line wrapping in mail reader ***/
 user_pref("mailnews.wraplength", 0);
+
+/*** OAUTH2 SETTINGS ***/
+/* comment out these lines and run the updater again after logging in to restore privacy defaults */
+user_pref("security.OCSP.enabled", 0); // [DEFAULT: 1]
+user_pref("network.cookie.cookieBehavior", 1); // [DEFAULT: 5]
+user_pref("javascript.enabled", true); // [DEFAULT: false]
+user_pref("permissions.default.image", 3); // [DEFAULT: 2]
 
 user_pref("_user.js.parrot", "I only do this 'cause I like bein' me own boss");
