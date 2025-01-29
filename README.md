@@ -34,7 +34,7 @@ user_pref("network.cookie.cookieBehavior", 1); // [DEFAULT: 5]
 ```
 
 ```js
-/* 9320 */
+/* 9230 */
 user_pref("javascript.enabled", true); // [DEFAULT: false]
 ```
 
