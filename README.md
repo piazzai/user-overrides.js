@@ -38,4 +38,9 @@ user_pref("network.cookie.cookieBehavior", 1); // [DEFAULT: 5]
 user_pref("javascript.enabled", true); // [DEFAULT: false]
 ```
 
+```js
+/* 9233 */
+user_pref("permissions.default.image", 3); // [DEFAULT: 2]
+```
+
 After authentication, it is also possible to clear any cookies saved during the process through the Thunderbird GUI. The email account should remain logged in after these cookies are gone.
