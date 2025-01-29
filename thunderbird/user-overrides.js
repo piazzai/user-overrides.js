@@ -108,11 +108,12 @@ user_pref("_user.js.parrot", "I'm a qualified brain surgeon!");
 /* disable line wrapping in mail reader ***/
 user_pref("mailnews.wraplength", 0);
 
-/*** OAUTH2 SETTINGS ***/
-/* comment out these lines and run the updater again after logging in to restore privacy defaults */
-user_pref("security.OCSP.enabled", 0); // [DEFAULT: 1]
-user_pref("network.cookie.cookieBehavior", 1); // [DEFAULT: 5]
-user_pref("javascript.enabled", true); // [DEFAULT: false]
-user_pref("permissions.default.image", 3); // [DEFAULT: 2]
+/*** OAUTH SETTINGS ***/
+/* uncomment these lines and run the updater to log into your account using oauth
+ * after login, comment them out and run the updater again to restore privacy-enhancing defaults ***/
+// user_pref("security.OCSP.enabled", 0); // 1211 [DEFAULT: 1]
+// user_pref("network.cookie.cookieBehavior", 1); // 7016 [DEFAULT: 5]
+// user_pref("javascript.enabled", true); // 9230 [DEFAULT: false]
+// user_pref("permissions.default.image", 3); // 9233 [DEFAULT: 2]
 
 user_pref("_user.js.parrot", "I only do this 'cause I like bein' me own boss");
