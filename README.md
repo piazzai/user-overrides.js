@@ -21,26 +21,12 @@ Make sure your Firefox profile is not currently in use while you run these scrip
 
 Download [updater.sh](https://github.com/HorlogeSkynet/thunderbird-user.js/blob/master/updater.sh), [prefsCleaner.sh](https://github.com/HorlogeSkynet/thunderbird-user.js/blob/master/prefsCleaner.sh), and [user.js](https://github.com/HorlogeSkynet/thunderbird-user.js/blob/master/user.js) from HorlogeSkynet's repo, place them in your Thunderbird profile folder, add the Thunderbird `user-overrides.js`, then run the scripts as above.
 
-Be aware that some of the preferences set by HorlogeSkynet's user.js make it impossible to log into email accounts using OAuth2. These preferences should be changed to the privacy-breaking values below, then reverted to the defaults after authentication.
+Be aware that some of the preferences set by HorlogeSkynet's user.js make it impossible to authenticate into email accounts using OAuth. These preferences are respected by the overrides file. If you need to use OAuth, uncomment the following lines at the end of the file:
 
 ```js
-/* 1211 */
-user_pref("security.OCSP.enabled", 0); // [DEFAULT: 1]
+// user_pref("security.OCSP.enabled", 0); // 1211 [DEFAULT: 1]
+// user_pref("network.cookie.cookieBehavior", 1); // 7016 [DEFAULT: 5]
+// user_pref("javascript.enabled", true); // 9230 [DEFAULT: false]
+// user_pref("permissions.default.image", 3); // 9233 [DEFAULT: 2]
 ```
-
-```js
-/* 7016 */
-user_pref("network.cookie.cookieBehavior", 1); // [DEFAULT: 5]
-```
-
-```js
-/* 9230 */
-user_pref("javascript.enabled", true); // [DEFAULT: false]
-```
-
-```js
-/* 9233 */
-user_pref("permissions.default.image", 3); // [DEFAULT: 2]
-```
-
-After authentication, it is also possible to clear any cookies saved during the process through the Thunderbird GUI. The email account should remain logged in after these cookies are gone.
+Run `updater.sh` and `prefsCleaner.sh` to enforce the new preferences; then, launch Thunderbird and log into your account. Once this is done, you should clear any cookies saved during the process via the Thunderbird GUI, close the program, comment out the OAuth preferences, and run the scripts again to restore HorlogeSkynet's defaults.
