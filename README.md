@@ -21,12 +21,11 @@ Make sure your Firefox profile is not currently in use while you run these scrip
 
 Download [updater.sh](https://github.com/HorlogeSkynet/thunderbird-user.js/blob/master/updater.sh), [prefsCleaner.sh](https://github.com/HorlogeSkynet/thunderbird-user.js/blob/master/prefsCleaner.sh), and [user.js](https://github.com/HorlogeSkynet/thunderbird-user.js/blob/master/user.js) from HorlogeSkynet's repo, place them in your Thunderbird profile folder, add the Thunderbird `user-overrides.js`, then run the scripts as above.
 
-Be aware that some of the preferences set by HorlogeSkynet's user.js make it impossible to authenticate into email accounts using OAuth. These preferences are respected by the overrides file. If you need to use OAuth, uncomment the following lines at the end of the file:
+Be aware that some of the preferences set by HorlogeSkynet's user.js make it impossible to authenticate into email accounts using OAuth. These preferences are respected by the overrides file because they are privacy-enhancing. If you must use OAuth, you need to temporarily flip them to privacy-breaking values. Uncomment the following lines at the end of the file:
 
 ```js
-// user_pref("security.OCSP.enabled", 0); // 1211 [DEFAULT: 1]
-// user_pref("network.cookie.cookieBehavior", 1); // 7016 [DEFAULT: 5]
-// user_pref("javascript.enabled", true); // 9230 [DEFAULT: false]
-// user_pref("permissions.default.image", 3); // 9233 [DEFAULT: 2]
+// user_pref("javascript.enabled", true);
+// user_pref("permissions.default.image", 3);
 ```
-Run `updater.sh` and `prefsCleaner.sh` to enforce the new preferences; then, launch Thunderbird and log into your account. Once this is done, you should clear any cookies saved during the process via the Thunderbird GUI, close the program, comment out the OAuth preferences, and run the scripts again to restore HorlogeSkynet's defaults.
+
+Run `updater.sh` and `prefsCleaner.sh` to enforce the new preferences, then launch Thunderbird and log into your account. Once this is done, you should clear any cookies saved during the process via the Thunderbird GUI, close the program, comment out the OAuth preferences, and run the scripts again to restore privacy-enhancing defaults.
