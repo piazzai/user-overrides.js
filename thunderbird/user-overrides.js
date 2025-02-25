@@ -35,8 +35,6 @@ user_pref("pref.privacy.disable_button.view_passwords", true);
 user_pref("mail.SpellCheckBeforeSend", false);
 /* 9212 */
 user_pref("mail.html_compose", false);
-/* 9216 */
-user_pref("mailnews.display.prefer_plaintext", true);
 /* 9217 */
 user_pref("mail.inline_attachments.text", false);
 /* 9313 */
