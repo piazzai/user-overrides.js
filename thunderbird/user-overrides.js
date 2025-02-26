@@ -43,6 +43,7 @@ user_pref("calendar.extract.service.enabled", false);
 /* add custom prefs */
 user_pref("_user.js.parrot", "I'm a qualified brain surgeon!");
 
+user_pref("mail.identity.default.suppress_signature_separator", true);
 user_pref("mailnews.wraplength", 0);
 // user_pref("javascript.enabled", true);
 // user_pref("permissions.default.image", 3);
