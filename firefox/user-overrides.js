@@ -65,6 +65,7 @@ user_pref("browser.pagethumbnails.capturing_disabled", true);
 user_pref("_user.js.parrot", "I'm a qualified brain surgeon!");
 
 user_pref("browser.translations.enable", false);
+user_pref("datareporting.usage.uploadEnabled", false);
 user_pref("extensions.pocket.enabled", false);
 user_pref("identity.fxaccounts.enabled", false);
 
