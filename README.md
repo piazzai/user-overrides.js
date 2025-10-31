@@ -1,5 +1,5 @@
 > **2025-10-31 Notice**  
-> Having switched from Firefox and Thunderbird to [Mullvad Browser](https://mullvad.net/en/browser) and Evolution, this repository is no longer maintained. Override files are still expected to work as upstream code is stable, but some preferences may be deprecated.
+> Having switched from Firefox and Thunderbird to [Mullvad Browser](https://mullvad.net/en/browser) and Evolution, this repository is no longer maintained. Override files are still expected to work, but some preferences may be deprecated.
 
 # user-overrides.js
 
