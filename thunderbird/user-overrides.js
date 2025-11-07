@@ -6,17 +6,12 @@ user_pref("mailnews.start_page.enabled", false);
 /* 0610 */
 user_pref("browser.send_pings", false);
 /* 2811 **/
-user_pref("privacy.clearOnShutdown.siteSettings", true);
 user_pref("privacy.clearOnShutdown_v2.siteSettings", true);
 /* 2820 */
 user_pref("privacy.clearSiteData.cookiesAndStorage", true);
 user_pref("privacy.clearSiteData.siteSettings", true);
 /* 2830 */
-user_pref("privacy.cpd.cookies", true);
 user_pref("privacy.clearHistory.cookiesAndStorage", true);
-user_pref("privacy.cpd.openWindows", true);
-user_pref("privacy.cpd.passwords", true);
-user_pref("privacy.cpd.siteSettings", true);
 user_pref("privacy.clearHistory.siteSettings", true);
 /* 4501 */
 user_pref("privacy.resistFingerprinting", true);
