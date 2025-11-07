@@ -38,6 +38,7 @@ user_pref("calendar.extract.service.enabled", false);
 /* add custom prefs */
 user_pref("_user.js.parrot", "I'm a qualified brain surgeon!");
 
+user_pref("calendar.timezone.local", "Europe/London");
 user_pref("calendar.week.start", 1);
 user_pref("mail.accounthub.enabled", false);
 user_pref("mail.identity.default.suppress_signature_separator", true);
