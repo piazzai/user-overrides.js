@@ -1,6 +1,3 @@
-> **2025-10-31 Notice**  
-> Having switched from Firefox and Thunderbird to [Mullvad Browser](https://mullvad.net/en/browser) and Evolution, this repository is no longer maintained. Override files are still expected to work, but some preferences may be deprecated.
-
 # user-overrides.js
 
 These are my own configuration overrides for Firefox and Thunderbird, to be loaded on top of the [arkenfox user.js](https://github.com/arkenfox/user.js/) and HorlogeSkynet's [thunderbird-user.js](https://github.com/HorlogeSkynet/thunderbird-user.js/). Before using these overrides, please make sure to read and understand the wikis available in the upstream project repos.
