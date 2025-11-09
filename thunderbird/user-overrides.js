@@ -40,6 +40,8 @@ user_pref("_user.js.parrot", "I'm a qualified brain surgeon!");
 
 user_pref("calendar.timezone.local", "Europe/London");
 user_pref("calendar.week.start", 1);
+user_pref("font.name.monospace.x_unicode", "Iosevka Fixed");
+user_pref("font.name.monospace.x_western", "Iosevka Fixed");
 user_pref("mail.accounthub.enabled", false);
 user_pref("mail.identity.default.suppress_signature_separator", true);
 user_pref("mailnews.wraplength", 0);
