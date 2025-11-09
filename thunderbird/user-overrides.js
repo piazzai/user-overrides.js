@@ -44,6 +44,7 @@ user_pref("font.name.monospace.x_unicode", "Iosevka Fixed");
 user_pref("font.name.monospace.x_western", "Iosevka Fixed");
 user_pref("mail.accounthub.enabled", false);
 user_pref("mail.identity.default.suppress_signature_separator", true);
+user_pref("mailnews.display.prefer_plaintext", true);
 user_pref("mailnews.wraplength", 0);
 // user_pref("javascript.enabled", true);
 // user_pref("permissions.default.image", 3);
