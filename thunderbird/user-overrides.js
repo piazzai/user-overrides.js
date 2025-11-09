@@ -41,6 +41,7 @@ user_pref("_user.js.parrot", "I'm a qualified brain surgeon!");
 user_pref("calendar.timezone.local", "Europe/London");
 user_pref("calendar.week.start", 1);
 // user_pref("font.name.monospace.x-western", "Iosevka Fixed");
+// user_pref("font.name.monospace.x-unicode", "Iosevka Fixed");
 // user_pref("font.name.sans-serif.x-western", "Iosevka Aile");
 // user_pref("font.name.serif.x-western", "Iosevka Etoile");
 user_pref("mail.accounthub.enabled", false);
