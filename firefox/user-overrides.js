@@ -9,12 +9,18 @@ user_pref("layout.css.visited_links_enabled", false);
 user_pref("browser.search.separatePrivateDefault", false);
 user_pref("browser.search.separatePrivateDefault.ui.enabled", false);
 /* 2811 */
+user_pref("privacy.clearOnShutdown_v2.historyFormDataAndDownloads", true);
 user_pref("privacy.clearOnShutdown_v2.siteSettings", true);
 /* 2820 */
 user_pref("privacy.clearSiteData.cookiesAndStorage", true);
+user_pref("privacy.clearSiteData.historyFormDataAndDownloads", true);
 user_pref("privacy.clearSiteData.siteSettings", true);
+/* 2821 */
+user_pref("privacy.clearSiteData.browsingHistoryAndDownloads", true);
 /* 2830 */
+user_pref("privacy.clearHistory.browsingHistoryAndDownloads", true);
 user_pref("privacy.clearHistory.cookiesAndStorage", true);
+user_pref("privacy.clearHistory.historyFormDataAndDownloads", true);
 user_pref("privacy.clearHistory.siteSettings", true);
 /* 4501 */
 user_pref("privacy.resistFingerprinting", true);
