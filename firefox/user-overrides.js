@@ -11,6 +11,9 @@ user_pref("browser.search.separatePrivateDefault.ui.enabled", false);
 /* 2811 */
 user_pref("privacy.clearOnShutdown_v2.historyFormDataAndDownloads", true);
 user_pref("privacy.clearOnShutdown_v2.siteSettings", true);
+/* 2812 */
+user_pref("privacy.clearOnShutdown_v2.browsingHistoryAndDownloads", true);
+user_pref("privacy.clearOnShutdown_v2.downloads", true);
 /* 2820 */
 user_pref("privacy.clearSiteData.cookiesAndStorage", true);
 user_pref("privacy.clearSiteData.historyFormDataAndDownloads", true);
