@@ -26,4 +26,6 @@ Be aware that some of the preferences set by HorlogeSkynet's user.js make it imp
 // user_pref("permissions.default.image", 3);
 ```
 
-Run `updater.sh` and `prefsCleaner.sh` to enforce the new preferences, then launch Thunderbird and log into your account using OAuth. Once you are done, clear any cookies, close Thunderbird, comment out the two lines again, and run `updater.sh` and `prefsCleaner.sh` to restore privacy-enhancing defaults.
+Run `updater.sh` and `prefsCleaner.sh` to enforce the new preferences, then launch Thunderbird and log into your account using OAuth. Once you are done you can clear any cookies, close Thunderbird, comment out the two lines again, and run `updater.sh` and `prefsCleaner.sh` to restore privacy-enhancing defaults.
+
+The two preferences above can also be flipped directly within Thunderbird by manually looking them in the config editor. Once they are set to the desired values, you can authenticate into your account using OAuth within the same session. All changes will be forgotten upon quitting Thunderbird because the `user.js` file was not modified.
