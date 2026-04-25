@@ -21,10 +21,11 @@ user_pref("privacy.clearSiteData.siteSettings", true);
 /* 2821 */
 user_pref("privacy.clearSiteData.browsingHistoryAndDownloads", true);
 /* 2830 */
-user_pref("privacy.clearHistory.browsingHistoryAndDownloads", true);
 user_pref("privacy.clearHistory.cookiesAndStorage", true);
 user_pref("privacy.clearHistory.historyFormDataAndDownloads", true);
 user_pref("privacy.clearHistory.siteSettings", true);
+/* 2831 */
+user_pref("privacy.clearHistory.browsingHistoryAndDownloads", true);
 /* 4501 */
 user_pref("privacy.resistFingerprinting", true);
 user_pref("privacy.resistFingerprinting.pbmode", true);
