@@ -73,5 +73,5 @@ user_pref("datareporting.usage.uploadEnabled", false);
 user_pref("extensions.pocket.enabled", false);
 user_pref("identity.fxaccounts.enabled", false);
 
-/* end overrides */
+/* end */
 user_pref("_user.js.parrot", "I only do this 'cause I like bein' me own boss");
