@@ -51,7 +51,6 @@ user_pref("mail.accounthub.enabled", false);
 user_pref("mailnews.display.html_as", 1);
 user_pref("mailnews.display.prefer_plaintext", true);
 user_pref("mailnews.wraplength", 0);
-user_pref("permissions.default.image", 3);
 
 /* end */
 user_pref("_user.js.parrot", "I only do this 'cause I like bein' me own boss");
