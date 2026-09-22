@@ -5,11 +5,18 @@ user_pref("_user.js.parrot", "I don't have to do this, you know?");
 user_pref("mailnews.start_page.enabled", false);
 /* 0610 */
 user_pref("browser.send_pings", false);
-/* 2811 **/
+/* 2811 */
+user_pref("privacy.clearOnShutdown_v2.historyFormDataAndDownloads", true);
 user_pref("privacy.clearOnShutdown_v2.siteSettings", true);
+/* 2812 */
+user_pref("privacy.clearOnShutdown_v2.browsingHistoryAndDownloads", true);
+user_pref("privacy.clearOnShutdown_v2.downloads", true);
 /* 2820 */
 user_pref("privacy.clearSiteData.cookiesAndStorage", true);
+user_pref("privacy.clearSiteData.historyFormDataAndDownloads", true);
 user_pref("privacy.clearSiteData.siteSettings", true);
+/* 2821 */
+user_pref("privacy.clearSiteData.browsingHistoryAndDownloads", true);
 /* 2830 */
 user_pref("privacy.clearHistory.cookiesAndStorage", true);
 user_pref("privacy.clearHistory.siteSettings", true);
