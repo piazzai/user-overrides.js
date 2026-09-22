@@ -19,13 +19,13 @@ Make sure your Firefox profile is not currently in use while you run these scrip
 
 Download [updater.sh](https://github.com/HorlogeSkynet/thunderbird-user.js/blob/master/updater.sh), [prefsCleaner.sh](https://github.com/HorlogeSkynet/thunderbird-user.js/blob/master/prefsCleaner.sh), and [user.js](https://github.com/HorlogeSkynet/thunderbird-user.js/blob/master/user.js) from HorlogeSkynet's repo, place them in your Thunderbird profile folder, add the Thunderbird `user-overrides.js`, then run the scripts as above.
 
-Be aware that some of the preferences set by HorlogeSkynet's user.js make it impossible to authenticate into email accounts using OAuth. These preferences are respected by `user-overrides.js` because they are privacy-enhancing. If you must use OAuth, you need to temporarily flip them by uncommenting the following two lines at the end of the file:
+Be aware that some of the preferences set by HorlogeSkynet's user.js make it impossible to authenticate into email accounts using OAuth. These preferences are respected by `user-overrides.js` because they are privacy-enhancing. If you must use OAuth, you need to temporarily flip them by adding the following two lines to custom prefs within the file:
 
 ```js
-// user_pref("javascript.enabled", true);
-// user_pref("permissions.default.image", 3);
+user_pref("javascript.enabled", true);
+user_pref("permissions.default.image", 3);
 ```
 
 Run `updater.sh` and `prefsCleaner.sh` to enforce the new preferences, then launch Thunderbird and log into your account using OAuth. Once you are done you can clear any cookies, close Thunderbird, comment out the two lines again, and run `updater.sh` and `prefsCleaner.sh` to restore privacy-enhancing defaults.
 
-The two preferences above can also be flipped directly within Thunderbird by manually looking them in the config editor. Once they are set to the desired values, you can authenticate into your account using OAuth within the same session. All changes will be forgotten upon quitting Thunderbird because the `user.js` file was not modified.
+The two preferences above can also be flipped directly within Thunderbird by manually looking them in the config editor. Once they are set to the privacy-breaking values, you can authenticate into your account using OAuth within the same session. All changes will be forgotten upon quitting Thunderbird because the `user.js` file was not modified.
